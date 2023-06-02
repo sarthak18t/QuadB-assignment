@@ -6,7 +6,7 @@ const db = require('./database/conn')
 
 const app = express();
 dotenv.config()
-app.use(router)
+app.use('/api/v1',router)
 app.use(express.json())
 
 app.get('/',(req,res)=>{
