@@ -7,7 +7,7 @@ import {BiUpArrow} from 'react-icons/bi'
 
 const Body = () => {
   return (
-    <div className="body">
+    <div className="body scroll-bar">
       <div className="body-heading">
         <p>#</p>
         <p>Platform</p>

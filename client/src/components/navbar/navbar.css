@@ -4,6 +4,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px 0;
+    margin: 10px;
+    margin-top: 0;
 }
 .navbar-logo img{
     color: #6BCACB;
@@ -44,3 +46,19 @@
     margin: 15px;
     padding: 10px;
 }
+
+@media screen and (max-width:950px){
+    .navbar-link{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:750px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-link{
+        flex-direction: row;
+    }
+}
+

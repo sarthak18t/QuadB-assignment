@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { Button, Dropdown } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 import { TbBrandTelegram } from "react-icons/tb";
 import CircularProgressBar from "./CicularProgressBar";
 import "./toogleButton.css";

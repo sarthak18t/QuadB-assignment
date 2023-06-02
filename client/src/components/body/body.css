@@ -1,64 +1,86 @@
-.body{
-    margin: 17px;
-    padding: 10px;
+.body {
+  margin: 17px;
+  padding: 10px;
 }
 
-.body-heading
-{
-    display: flex;
-    flex-direction: row;
-    color:  #818388;
-    align-items: center;
-    font-size: 25px;
-    justify-content: space-between;
+.body-heading {
+  display: flex;
+  flex-direction: row;
+  color: #818388;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-between;
 }
 
-.body-heading p{
-    margin: 0 22px;
+.body-heading p {
+  margin: 0 22px;
 }
 
-.body-detail{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.body-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .body-detail-1,
 .body-detail-2,
 .body-detail-3,
 .body-detail-4,
-.body-detail-5
-{
-    color: white;
-    background-color: #2E3241;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    margin: 10px;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: 600;
+.body-detail-5 {
+  color: white;
+  background-color: #2e3241;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .body-detail-1 img,
 .body-detail-2 img,
 .body-detail-3 img,
 .body-detail-4 img,
-.body-detail-5 img{
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
+.body-detail-5 img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .difference-neg,
-.savings-neg
-{
-    color: #DA5757;
+.savings-neg {
+  color: #da5757;
 }
 .difference-pos,
-.savings-pos
-{
-    color: #5DC7C2;
+.savings-pos {
+  color: #5dc7c2;
+}
+
+@media screen and (max-width:950px){
+    .scroll-bar{
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+      .body-detail-1,
+      .body-detail-2,
+      .body-detail-3,
+      .body-detail-4,
+      .body-detail-5{
+        background-color: #191D28;
+        justify-content: space-between;
+      }
+
+      .body-detail-1 p,
+      .body-detail-2 p,
+      .body-detail-3 p,
+      .body-detail-4 p,
+      .body-detail-5 p
+      {
+        margin: 0px 15px;
+      }
+      
+      
 }
