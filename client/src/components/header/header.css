@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #6BCACB;
+    padding: 10px;
+}
+
+.header-5min,
+.header-1day,
+.header-1hour,
+.header-1week
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-5min h5,
+.header-1day h5,
+.header-1hour h5,
+.header-1week h5
+{
+    align-items: center;
+    color: #818388;
+    font-weight: 100;
+}
+
+.header-5min h2,
+.header-1day h2,
+.header-1hour h2,
+.header-1week h2
+{
+    align-items: center;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.header-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-main h3{
+    color: #818388;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.header-main h1{
+    color: white;
+    font-size: 70px;
+}
+
+.header-main h4{
+    color: #818388;
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 20px;
+}
