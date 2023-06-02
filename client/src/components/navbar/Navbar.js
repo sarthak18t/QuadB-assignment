@@ -3,13 +3,15 @@ import "./navbar.css";
 import { Button, Dropdown } from "react-bootstrap";
 import { TbBrandTelegram } from "react-icons/tb";
 import CircularProgressBar from "./CicularProgressBar";
+import "./toogleButton.css";
+// eslint-disable-next-line react-hooks/rules-of-hooks
+var mode = false
 const Navbar = () => {
-
-  const [isDarkMode,setIsDarkMode] = useState(false);
+   const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
-  }
-
+    mode = isDarkMode
+  };
 
   return (
     <div className="navbar">
@@ -42,7 +44,7 @@ const Navbar = () => {
             <Dropdown.Item href="#action1">DASH</Dropdown.Item>
             <Dropdown.Item href="#action1">ZEC</Dropdown.Item>
             <Dropdown.Item href="#action1">XEM</Dropdown.Item>
-            <Dropdown.Item href="#action1">IOST</Dropdown.Item>  
+            <Dropdown.Item href="#action1">IOST</Dropdown.Item>
             <Dropdown.Item href="#action1">WIN</Dropdown.Item>
             <Dropdown.Item href="#action1">BTT</Dropdown.Item>
             <Dropdown.Item href="#action1">WRX</Dropdown.Item>
@@ -51,16 +53,20 @@ const Navbar = () => {
         <button>BUY BTC</button>
       </div>
       <div className="navbar-about">
-      <CircularProgressBar/>
+        <CircularProgressBar />
         <button>
           <TbBrandTelegram /> Connect Telegram
         </button>
-        <button onClick={toggleDarkMode}>
-        {isDarkMode ? 'Dark Mode' : 'Light Mode'}
-        </button>
+        <div className={isDarkMode?"dak-mode":"light-mode"}>
+        <label className="switch">
+          <input type="checkbox" onChange={toggleDarkMode} />
+          <span className="slider round" />
+        </label>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Navbar;
+export {mode}

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "server": "npm run server --prefix ./server",
+    "prod" : "npm start --prefix ./client",
+    "start": "concurrently \"npm run server\" \"npm run prod\""
+  },
+  "dependencies": {
+    "concurrently": "^8.1.0",
+    "nodemon": "^2.0.22"
+  }
+}
